@@ -67,15 +67,26 @@ span {
     float: right;
 }
 
-#zorua {;
+#zorua {
+    background-image: url(../images/zorua-hisuian.png);
     height: 150px;
     width: 150px;
-    float: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
 }
 
-input[type=checkbox]:checked + span + #zorua::after {
-    
-    animation: fadeIn 0.7s;
+input[type=checkbox]:checked + #zorua + span ::after {
+    background-image: url(../images/zorua-hisuian-shiny.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#zorua:hover {
+    background-image: url(../images/zorua-hisuian-shiny.png);
 }
 
 @keyframes fadeIn {
