@@ -1,5 +1,4 @@
-/* reset all of the defaults to 0 so that you can write your own css */
-/* don't rely on the built-in browser defaults */
+/* Basic HTML Selectors */
 
 * {
     border: none;
@@ -42,21 +41,9 @@ article > h2 {
 
 article:first-of-type {border: 4px solid red}
 
-#inprogress {border: 4px solid lightskyblue}
-#inprogress h2 {color: lightskyblue;}
-
-#done {border: 4px solid lightgreen;}
-#done h2 {color: lightgreen;}
-
 ul {list-style-type: none;}
 
 ul li {padding: 6px 8px; text-transform: uppercase;}
-
-.todo li:nth-child(odd) {background-color: red;}
-
-.inprogress li:nth-child(odd) {background-color: lightskyblue;}
-
-.done li:nth-child(odd) {background-color: lightgreen;}
 
 input[type=checkbox] {
     margin-right: 6px;
@@ -65,6 +52,167 @@ input[type=checkbox] {
 
 span {
     float: right;
+}
+
+/* IDs */
+
+#activehunt {border: 4px solid lightskyblue}
+#activehunt h2 {color: lightskyblue;}
+
+#caught {border: 4px solid lightgreen;}
+#caught h2 {color: lightgreen;}
+
+#arcanine {
+    background-image: url(../images/arcanine-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#avalugg {
+    background-image: url(../images/avalugg-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#basculegion {
+    background-image: url(../images/basculegion.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#braviary {
+    background-image: url(../images/braviary-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#decidueye {
+    background-image: url(../images/decidueye-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#goodra {
+    background-image: url(../images/goodra-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#growlithe {
+    background-image: url(../images/growlithe-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#kleavor {
+    background-image: url(../images/kleavor-regular.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#lilligant {
+    background-image: url(../images/lilligant-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#overqwil {
+    background-image: url(../images/overqwil.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#samurott {
+    background-image: url(../images/samurott-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#sliggoo {
+    background-image: url(../images/sliggoo-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#sneasler {
+    background-image: url(../images/sneasler.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#typhlosion {
+    background-image: url(../images/typhlosion-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#ursaluna {
+    background-image: url(../images/ursaluna.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#wyrdeer {
+    background-image: url(../images/wyrdeer.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+#zoroark {
+    background-image: url(../images/zoroark-hisuian.png);
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
 }
 
 #zorua {
@@ -76,18 +224,214 @@ span {
     display: inline-block;
 }
 
-input[type=checkbox]:checked + #zorua + span ::after {
-    background-image: url(../images/zorua-hisuian-shiny.png);
-    height: 150px;
-    width: 150px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
+/* Classes */
+
+.radar li:nth-child(odd) {background-color: red;}
+
+.activehunt li:nth-child(odd) {background-color: lightskyblue;}
+
+.caught li:nth-child(odd) {background-color: lightgreen;}
+
+/* Checkboxes and Animation */
+
+input[type=checkbox]:checked + #arcanine {
+    background-image: url(../images/arcanine-hisuian-shiny.png);
 }
 
-#zorua:hover {
+input[type=checkbox]:checked + #avalugg {
+    background-image: url(../images/avalugg-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #basculegion {
+    background-image: url(../images/basculegion-shiny.png);
+}
+
+input[type=checkbox]:checked + #braviary {
+    background-image: url(../images/braviary-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #decidueye {
+    background-image: url(../images/decidueye-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #goodra {
+    background-image: url(../images/goodra-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #growlithe {
+    background-image: url(../images/growlithe-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #kleavor {
+    background-image: url(../images/kleavor-shiny.png);
+}
+
+input[type=checkbox]:checked + #lilligant {
+    background-image: url(../images/lilligant-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #overqwil {
+    background-image: url(../images/overqwil-shiny.png);
+}
+
+input[type=checkbox]:checked + #samurott {
+    background-image: url(../images/samurott-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #sliggoo {
+    background-image: url(../images/sliggoo-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #sneasler {
+    background-image: url(../images/sneasler-shiny.png);
+}
+
+input[type=checkbox]:checked + #typhlosion {
+    background-image: url(../images/typhlosion-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #ursaluna {
+    background-image: url(../images/ursaluna-shiny.png);
+}
+
+input[type=checkbox]:checked + #wyrdeer {
+    background-image: url(../images/wyrdeer-shiny.png);
+}
+
+input[type=checkbox]:checked + #zoroark {
+    background-image: url(../images/zoroark-hisuian-shiny.png);
+}
+
+input[type=checkbox]:checked + #zorua {
     background-image: url(../images/zorua-hisuian-shiny.png);
 }
+
+input[type=checkbox]:checked + #arcanine::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #avalugg::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #basculegion::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #braviary::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #decidueye::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #goodra::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #growlithe::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #kleavor::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #lilligant::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #overqwil::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #samurott::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #sliggoo::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #sneasler::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #typhlosion::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #ursaluna::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #wyrdeer::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #zoroark::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+
+input[type=checkbox]:checked + #zorua::after {
+    content: "\2728";
+    position: absolute;
+    font-size: 2em;
+    animation: fadeIn 1s;
+}
+  
 
 @keyframes fadeIn {
     from {opacity: 0;}
