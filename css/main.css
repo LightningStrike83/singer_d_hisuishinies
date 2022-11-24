@@ -4,7 +4,6 @@
     border: none;
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
 } 
 
@@ -14,9 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-
     font-family: Arial, Helvetica, sans-serif;
-
     color: white;
 }
 
@@ -26,33 +23,26 @@ article {
     width: 25%;
     border: 4px solid white;
     border-radius: 8px;
-
     display: inline-block;
     margin: 10px 12px;
-
     text-align: left;
 }
 
 main {text-align: center;}
 
-article > h2 {
-    color: red;
-    padding: 4px 8px;}
+article > h2 {color: red; padding: 4px 8px;}
 
 article:first-of-type {border: 4px solid red}
 
 ul {list-style-type: none;}
 
-ul li {padding: 6px 8px; text-transform: uppercase;}
-
-input[type=checkbox] {
-    margin-right: 6px;
-    float: right;
+ul li {padding: 6px 8px; text-transform: uppercase;
 }
 
-span {
-    float: right;
+input[type=checkbox] {margin-right: 6px; float: right;
 }
+
+span {float: right;}
 
 /* IDs */
 
@@ -234,77 +224,41 @@ span {
 
 /* Checkboxes and Animation */
 
-input[type=checkbox]:checked + #arcanine {
-    background-image: url(../images/arcanine-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #arcanine {background-image: url(../images/arcanine-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #avalugg {
-    background-image: url(../images/avalugg-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #avalugg {background-image: url(../images/avalugg-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #basculegion {
-    background-image: url(../images/basculegion-shiny.png);
-}
+input[type=checkbox]:checked + #basculegion {background-image: url(../images/basculegion-shiny.png);}
 
-input[type=checkbox]:checked + #braviary {
-    background-image: url(../images/braviary-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #braviary {background-image: url(../images/braviary-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #decidueye {
-    background-image: url(../images/decidueye-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #decidueye {background-image: url(../images/decidueye-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #goodra {
-    background-image: url(../images/goodra-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #goodra {background-image: url(../images/goodra-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #growlithe {
-    background-image: url(../images/growlithe-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #growlithe {background-image: url(../images/growlithe-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #kleavor {
-    background-image: url(../images/kleavor-shiny.png);
-}
+input[type=checkbox]:checked + #kleavor {background-image: url(../images/kleavor-shiny.png);}
 
-input[type=checkbox]:checked + #lilligant {
-    background-image: url(../images/lilligant-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #lilligant {background-image: url(../images/lilligant-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #overqwil {
-    background-image: url(../images/overqwil-shiny.png);
-}
+input[type=checkbox]:checked + #overqwil {background-image: url(../images/overqwil-shiny.png);}
 
-input[type=checkbox]:checked + #samurott {
-    background-image: url(../images/samurott-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #samurott {background-image: url(../images/samurott-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #sliggoo {
-    background-image: url(../images/sliggoo-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #sliggoo {background-image: url(../images/sliggoo-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #sneasler {
-    background-image: url(../images/sneasler-shiny.png);
-}
+input[type=checkbox]:checked + #sneasler {background-image: url(../images/sneasler-shiny.png);}
 
-input[type=checkbox]:checked + #typhlosion {
-    background-image: url(../images/typhlosion-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #typhlosion {background-image: url(../images/typhlosion-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #ursaluna {
-    background-image: url(../images/ursaluna-shiny.png);
-}
+input[type=checkbox]:checked + #ursaluna {background-image: url(../images/ursaluna-shiny.png);}
 
-input[type=checkbox]:checked + #wyrdeer {
-    background-image: url(../images/wyrdeer-shiny.png);
-}
+input[type=checkbox]:checked + #wyrdeer {background-image: url(../images/wyrdeer-shiny.png);}
 
-input[type=checkbox]:checked + #zoroark {
-    background-image: url(../images/zoroark-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #zoroark {background-image: url(../images/zoroark-hisuian-shiny.png);}
 
-input[type=checkbox]:checked + #zorua {
-    background-image: url(../images/zorua-hisuian-shiny.png);
-}
+input[type=checkbox]:checked + #zorua {background-image: url(../images/zorua-hisuian-shiny.png);}
 
 input[type=checkbox]:checked + #arcanine::after {
     content: "\2728";
